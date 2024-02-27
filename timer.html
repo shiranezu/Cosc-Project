@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count down timer</title>
+    <title>Countdown timer</title>
     <style>
         *{
             background-color: #ffd1e3;
@@ -32,7 +32,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 10%;
+            width: 17%;
             height: 50%;
             background-color: #392467;
             color: #ffd1e3;
@@ -59,30 +59,34 @@
     <p id="demo"></p>
 
     <script>
-var countDownDate = new Date("march 30, 2024 15:37:25").getTime();
+        var countDownDate = new Date("march 30, 2024 15:37:25").getTime();
 
-var x = setInterval(function() {
+        var x = setInterval(function() {
 
-  var now = new Date().getTime();
+        var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+        var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+        document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+        + minutes + " min " + seconds + " secs ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Countdown has expired.";
+        }
+        }, 1000);
     </script>
-    <button>
-        <a href="#"> Click Here to claim your prize!!!</a>
+    <button type="button">
+        <a href="https://samsung.com/africa_en/"> Click Here to claim your prize!!!</a>
     </button>
 </body>
 </html>
+
+<!-- Oluonye Awele Edward
+Computer Science Group C
+154667 -->
