@@ -28,11 +28,11 @@
             font-size: 14px;
             color: #a367b1;
         }
-        #demo{
+        #timer{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 17%;
+            width: 18%;
             height: 50%;
             background-color: #392467;
             color: #ffd1e3;
@@ -45,7 +45,7 @@
     </style>
 </head>
 <body>
-    <img src="phone.png" alt="A picture of an s24">
+    <img src="/images/phone.png" alt="A picture of an s24">
 
     <h3>
         OLD SAMSUNG S24 GIVEAWAY
@@ -56,7 +56,7 @@
     <p class="body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quidem alias dolor voluptatem eum! Sapiente aliquid nemo eaque. Quasi id incidunt eaque labore nostrum alias eius maiores odit culpa vero praesentium, aliquid quas corrupti magnam quibusdam possimus ratione neque deserunt modi nisi assumenda. Sed delectus at quibusdam hic blanditiis culpa, excepturi similique maiores accusantium eveniet sapiente possimus quisquam facere libero!
     </p>
-    <p id="demo"></p>
+    <p id="timer"></p>
 
     <script>
         var countDownDate = new Date("march 30, 2024 15:37:25").getTime();
@@ -72,7 +72,7 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+        document.getElementById("timer").innerHTML = days + " days " + hours + " hours "
         + minutes + " min " + seconds + " secs ";
 
         if (distance < 0) {
